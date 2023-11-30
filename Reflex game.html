@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device:width, initial-scale=1.0">
+    <title>Reflex game</title>
+    <link rel="shortcut icon icon" type="image/x-icon" href="rock-paper-scissors.ico" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Reflex game</h1>
+    <p2 id="p2">Play now</p2>
+    <p2 id="p3">the best</p2>
+    <p id="p1">the best</p>
+    <button onclick="myFunction()">🤞</button>
+    <button onclick="myFunction2()">🖐️</button>
+    <button onclick="myFunction3()">🤟</button>
+    <script>
+        var result = "jo mama";
+        var index = 0;
+        var score = 0;
+        var time = 0;
+        var texts = [
+            "🤞",
+            "🖐️",
+            "🤟"
+        ];
+        result = texts[Math.floor(Math.random() * texts.length)];
+        document.getElementById('p1').innerHTML = result;
+
+        setTimeout(bunction, 1000)
+        function bunction() {
+            time = time + 1;
+            document.getElementById('p2').innerHTML = time;
+            if (time < 1000) {
+                setTimeout(bunction, 1)
+                document.getElementById('p3').innerHTML = "      |       score: " + score;
+            }
+        }
+        function myFunction() {
+            if (time < 1000) {
+                if (result == "🤞") {
+                    score = score + 1;
+                } else {
+                    time = 1000;
+
+                }
+                result = texts[Math.floor(Math.random() * texts.length)];
+                document.getElementById('p1').innerHTML = result;
+            }
+
+
+        }
+        function myFunction2() {
+            if (time < 1000) {
+                if (result == "🖐️") {
+                    score = score + 1;
+                } else {
+                    time = 1000;
+
+                }
+                result = texts[Math.floor(Math.random() * texts.length)];
+                document.getElementById('p1').innerHTML = result;
+            }
+
+        }
+        function myFunction3() {
+            if (time < 1000) {
+                if (result == "🤟") {
+                    score = score + 1;
+                } else {
+                    time = 1000;
+
+                }
+                result = texts[Math.floor(Math.random() * texts.length)];
+                document.getElementById('p1').innerHTML = result;
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

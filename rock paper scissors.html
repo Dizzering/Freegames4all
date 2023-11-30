@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , content="width=device:width, initial-scale=1.0">
+    <title>Rock paper scissors!!</title>
+    <link rel="shortcut icon icon" type="image/x-icon" href="rock-paper-scissors.ico" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <body>
+        <h1>Rock Paper Scissors</h1>
+        <p2 id="p2">Play now</p2>
+        <p id="p1">the best</p>
+        <button onclick="myFunction()">👊</button>
+        <button onclick="myFunction2()">🖐️</button>
+        <button onclick="myFunction3()">✌️</button>
+        <script>
+            var result = "jo mama";
+            var texts = [
+                "👊",
+                "🖐️",
+                "✌️"
+            ];
+
+            function myFunction() {
+                result = texts[Math.floor(Math.random() * texts.length)];
+                document.getElementById('p1').innerHTML = result;
+                if (result == "🖐️") {
+                    document.getElementById('p2').innerHTML = "You lose";
+                }
+                if (result == "✌️") {
+                    document.getElementById('p2').innerHTML = "You win";
+                }
+                if (result == "👊") {
+                    document.getElementById('p2').innerHTML = "It is a draw";
+                }
+
+            }
+            function myFunction2() {
+                result = texts[Math.floor(Math.random() * texts.length)];
+                document.getElementById('p1').innerHTML = result;
+                if (result == "✌️") {
+                    document.getElementById('p2').innerHTML = "You lose";
+                }
+                if (result == "👊") {
+                    document.getElementById('p2').innerHTML = "You win";
+                }
+                if (result == "🖐️") {
+                    document.getElementById('p2').innerHTML = "It is a draw";
+                }
+            }
+            function myFunction3() {
+                result = texts[Math.floor(Math.random() * texts.length)];
+                document.getElementById('p1').innerHTML = result;
+                if (result == "👊") {
+                    document.getElementById('p2').innerHTML = "You lose";
+                }
+                if (result == "🖐️") {
+                    document.getElementById('p2').innerHTML = "You win";
+                }
+                if (result == "✌️") {
+                    document.getElementById('p2').innerHTML = "It is a draw";
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>

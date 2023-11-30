@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-image: url(background.PNG);
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Lucida Sans';
+
+}
+button {
+    color: black;
+    background-color: tomato;
+    height: 100px;
+    width: 200px;
+    font-family: 'Comic Sans MS';
+    margin: 10px;
+    font-size: 50px;
+}
+p {
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+}
+p2 {
+    font-family: 'Trebuchet MS';
+    font-size: 25px;
+}
+a {
+    font-family: 'Lucida Sans';
+    font-size: 30px;
+}
