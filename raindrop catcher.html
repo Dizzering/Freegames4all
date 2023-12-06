@@ -80,8 +80,8 @@ update = function()
     drop_pos_y = 100
     end
   drop_pos_y -= gravity
-  if keyboard.LEFT or mouse.x > 0 and mouse.pressed then drop_x -= 3 end
-  if keyboard.RIGHT or mouse.x < 0 and mouse.pressed then drop_x += 3 end
+  if keyboard.LEFT or mouse.x < 0 and mouse.pressed then drop_x -= 3 end
+  if keyboard.RIGHT or mouse.x > 0 and mouse.pressed then drop_x += 3 end
   if drop_x < -250 then drop_x = 240 end
   if drop_x > 250 then drop_x = -240 end
   if drop_pos_y < -80 then
